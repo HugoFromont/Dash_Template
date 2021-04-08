@@ -109,7 +109,7 @@ conteneur.conteneur_3_infobox(
 Vous devez renseigner 3 images à afficher sur chacun de vos infobox, de 3 titres et aussi de 3 valeurs. Les valeurs correspondent à un id d'output de votre callback. De ce fait, la valeur de votre infobox change en fonction de vos filtres.
 
 Il existe le même conteneur avec 2 infobox. Le nom de la fonction est la suivante : **conteneur.conteneur_2_infobox**
-!<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_infobox.PNG?raw=true">
+!<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_2_infobox.PNG?raw=true">
 
 ## conteneur_1_graph
 La fonction conteneur_1_graph permet d'afficher 1 graphique sur toute la largeur de la page.
