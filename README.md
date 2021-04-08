@@ -107,11 +107,9 @@ conteneur.conteneur_3_infobox(
 Vous devez renseigner 3 images à afficher sur chacun de vos infobox, de 3 titres et aussi de 3 valeurs. Les valeurs correspondent à un id d'output de votre callback. De ce fait, la valeur de votre infobox change en fonction de vos filtres.
 
 #### conteneur_1_graph
-
-![apercu](//doc/apercut_1_graph.PNG)
-
 La fonction conteneur_1_graph permet d'afficher 1 graphique sur toute la largeur de la page.
 
+<img src = "">
 Pour l'utiliser, vous avez juste à utiliser la fonction dans une section :
 ```{python}
 conteneur.conteneur_1_graph("graph")
