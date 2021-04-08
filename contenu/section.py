@@ -23,7 +23,7 @@ def section_1():
                     "https://github.com/HugoFromont/Tweet_Analysis_Application/blob/main/app/img/perf.png?raw=true"
                 ],
                 titres=["VALEUR MAX", "VALEUR MIN", "VALEUR MOYENNE"],
-                id_output=["max_value", "min_value", "mean_value"]
+            id_output=["max_value", "min_value", "mean_value"]
             ),
             conteneur.conteneur_1_graph("graph"),
             conteneur.conteneur_2_graph(["graph1", "graph2"]),
@@ -46,7 +46,15 @@ def section_2():
     section = html.Section(
                     className="section_content",
                     children=[
-                        html.H1('Partie 2', id="partie2", className="titre_menu")
+                        html.H1('Partie 2', id="partie2", className="titre_menu"),
+                        conteneur.conteneur_2_infobox(
+                            images_url=[
+                                "https://github.com/HugoFromont/Tweet_Analysis_Application/blob/main/app/img/plus.png?raw=true",
+                                "https://github.com/HugoFromont/Tweet_Analysis_Application/blob/main/app/img/moins.png?raw=true"
+                            ],
+                            titres=["VALEUR MAX", "VALEUR MIN"],
+                            id_output=["max_value2", "min_value2"]
+                        )
                     ])
     return section
 

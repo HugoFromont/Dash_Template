@@ -51,6 +51,44 @@ def conteneur_3_infobox(images_url, titres, id_output):
         ])
     return conteneur
 
+def conteneur_2_infobox(images_url, titres, id_output):
+    """Créer un groupe de 3 infobox sur une ligne
+
+    Parameters
+    ----------
+    images_url : list (liste de 3 images)
+    titres : list (Liste des 3 titres)
+    id_output : list (liste des 3 output id
+    """
+    conteneur = html.Div(
+        className="groupe_3_infobox",
+        children=[
+            ########## Infobox 1
+            html.Div(
+                className="infobox_div2",
+                children=[
+                    html.Div([
+                        html.Img(className="image_infobox", src=images_url[0])
+                    ], className="infobox_image_div2"),
+                    html.Div([
+                        html.P(titres[0], className="text_infobox"),
+                        html.P(id=id_output[0], children=["..."], className="text_infobox")
+                    ], className="infobox_text_div")
+                ]),
+            ########## Infobox 2
+            html.Div(
+                className="infobox_div2",
+                children=[
+                    html.Div([html.Img(className="image_infobox",src=images_url[1])
+                        ], className="infobox_image_div2"),
+                    html.Div([
+                        html.P(titres[1], className="text_infobox"),
+                        html.P(id=id_output[1], children=["..."], className="text_infobox")
+                    ], className="infobox_text_div")
+                ])
+        ])
+    return conteneur
+
 
 def conteneur_1_graph(graph_id):
     """Créer un block pour inserer un graphique

@@ -149,12 +149,29 @@
   margin-left: 1%;
   border: solid 2px rgba(25, 29, 63, 0.75);
 }
+
+.infobox_div2{
+  background: rgba(255, 255, 255);
+  position: relative;
+  float: left;
+  width: 47%;
+  height: 100px;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: solid 2px rgba(25, 29, 63, 0.75);
+}
 .image_infobox{
   width: 100%;
   height: 100%;
 }
 .infobox_image_div{
   width: 25%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.infobox_image_div2{
+  width: 18%;
   height: 100%;
   position: relative;
   float: left;

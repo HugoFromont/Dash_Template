@@ -51,7 +51,9 @@ app.layout = html.Div(
      Output('mean_value', 'children'),
      Output('graph', 'figure'),
      Output('graph1', 'figure'),
-     Output('graph2', 'figure')
+     Output('graph2', 'figure'),
+     Output('max_value2', 'children'),
+     Output('min_value2', 'children')
      ],
     [Input('select_file', 'value')]
 )
@@ -69,7 +71,7 @@ def affiche_max_value(file):
     )
     fig1 = fig
     fig2 = fig
-    return df.var2.max(), df.var2.min(), df.var2.mean(), fig, fig1, fig2
+    return df.var2.max(), df.var2.min(), df.var2.mean(), fig, fig1, fig2,df.var2.max(), df.var2.min()
 
 
 #################### Lancement de l'application ####################
