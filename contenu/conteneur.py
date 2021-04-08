@@ -52,13 +52,13 @@ def conteneur_3_infobox(images_url, titres, id_output):
     return conteneur
 
 def conteneur_2_infobox(images_url, titres, id_output):
-    """Créer un groupe de 3 infobox sur une ligne
+    """Créer un groupe de 2 infobox sur une ligne
 
     Parameters
     ----------
-    images_url : list (liste de 3 images)
-    titres : list (Liste des 3 titres)
-    id_output : list (liste des 3 output id
+    images_url : list (liste de 2 images)
+    titres : list (Liste des 2 titres)
+    id_output : list (liste des 2 output id
     """
     conteneur = html.Div(
         className="groupe_3_infobox",
