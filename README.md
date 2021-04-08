@@ -1,4 +1,4 @@
-#Template Dash
+# Template Dash
 ## Aperçu
 
 Ce script permet de créer un rapport dash à partir d'un template aux couleurs de B&D.
@@ -6,7 +6,7 @@ Ce script permet de créer un rapport dash à partir d'un template aux couleurs 
 ## Importation du template
 
 ```{commandline}
-git clone ...
+git clone https://github.com/HugoFromont/Dash_Template.git
 pip install -r requirements.txt
 ```
 
@@ -24,7 +24,7 @@ Les différents éléments de l'application sont paramétrés dans leur propre s
 * Le menu : contenu/menu.py
 * les sections : contenu/section.py
 
-### Le corps de l'application
+## Le corps de l'application
 
 Le script **app.py** permet d'insérer les différents composants de l'application :
 * le menu que nous allons paramétrer dans le script contenu/menu
@@ -51,7 +51,7 @@ app.layout = html.Div(
     ])
 ```
 
-### Le menu
+## Le menu
 
 Le menu est composé d'une première partie qui permet de faire des liens d'ancrage sur les différentes sections et d'une seconde partie pour afficher des filtres dans le menu.
 Pour modifier les liens d'ancrage, il est nécessaire de modifier le paramètre href des balises html.A() en renseignant l'id de la section correspondantes précédé de "#".
@@ -84,12 +84,12 @@ Les éléments que vous souhaitez rajouter à votre section sont à placer dans 
 Vous pouvez définir et organiser vos propres éléments en utilisant des balises div associé à du CSS dans les sections.
 Mais vous pouvez aussi utiliser des conteneurs ayant déjà une mise en forme CSS de défini.
  
-### les conteneurs
+## les conteneurs
 
 Vous pouvez utiliser des conteneurs déjà définis pour afficher des éléments dans votre application.
 Il existe 3 conteneurs déjà implémenté.
 
-#### conteneur_3_infobox
+## conteneur_3_infobox
 
 La fonction conteneur_3_infobox permet d'afficher 3 infobox l'un à coté des autres :
 !<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_infobox.PNG?raw=true">
@@ -108,7 +108,7 @@ conteneur.conteneur_3_infobox(
 ```
 Vous devez renseigner 3 images à afficher sur chacun de vos infobox, de 3 titres et aussi de 3 valeurs. Les valeurs correspondent à un id d'output de votre callback. De ce fait, la valeur de votre infobox change en fonction de vos filtres.
 
-#### conteneur_1_graph
+## conteneur_1_graph
 La fonction conteneur_1_graph permet d'afficher 1 graphique sur toute la largeur de la page.
 
 <img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_1_graph.PNG?raw=true">
@@ -120,7 +120,7 @@ conteneur.conteneur_1_graph("graph")
 Vous devez juste renseigner l'id de l'output de votre graphique ou de votre data table.
 
 
-#### conteneur_2_graph
+## conteneur_2_graph
                      
 La fonction conteneur_2_graph permet d'afficher 2 graphiques cote a cote sur toute la largeur de la page.
 
@@ -142,7 +142,7 @@ Pour ajouter des éléments interactifs, vous devez modifier la partie sur les �
 Pour déployer l'application sur une VM, vous devez importer votre application sur la VM.
 
 ```{commandline}
-git clone ...
+git clone your_app
 pip install -r requirements.txt
 ```
 
