@@ -13,7 +13,9 @@ pip install -r requirements.txt
 ## Explication des différentes partie du template
 
 Voici un aperçut de l'application dash :
-![apercu](//doc/apercut_appli.PNG)
+
+<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_appli.PNG?raw=true">
+
 
 L'application est composée d'un menu statique à gauche et d'une partie qui contient le contenue de l'application. Cette partie est composée de différentes sections dans lesquelles nous retrouvons des conteneurs qui permettent de stocker différents éléments interactifs.
 
@@ -75,7 +77,7 @@ def section_2():
                     ])
     return section
 ```
-![apercu](//doc/apercut_section_vide.PNG)
+<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_section_vide.PNG?raw=true">
 
 Les éléments que vous souhaitez rajouter à votre section sont à placer dans la liste du children après le titre.
 
@@ -90,7 +92,7 @@ Il existe 3 conteneurs déjà implémenté.
 #### conteneur_3_infobox
 
 La fonction conteneur_3_infobox permet d'afficher 3 infobox l'un à coté des autres :
-![apercu](//doc/apercut_infobox.PNG)
+!<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_infobox.PNG?raw=true">
 
 Pour l'utiliser vous avez juste à utiliser la fonction dans une section :
 ```{python}
@@ -109,7 +111,8 @@ Vous devez renseigner 3 images à afficher sur chacun de vos infobox, de 3 titre
 #### conteneur_1_graph
 La fonction conteneur_1_graph permet d'afficher 1 graphique sur toute la largeur de la page.
 
-<img src = "">
+<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_1_graph.PNG?raw=true">
+
 Pour l'utiliser, vous avez juste à utiliser la fonction dans une section :
 ```{python}
 conteneur.conteneur_1_graph("graph")
@@ -118,10 +121,10 @@ Vous devez juste renseigner l'id de l'output de votre graphique ou de votre data
 
 
 #### conteneur_2_graph
-            
-![apercu](//doc/apercut_2_graph.PNG)
-            
+                     
 La fonction conteneur_2_graph permet d'afficher 2 graphiques cote a cote sur toute la largeur de la page.
+
+<img src = "https://github.com/HugoFromont/Dash_Template/blob/main/doc/apercu_2_graph.PNG?raw=true">
 
 Pour l'utiliser, vous avez juste à utiliser la fonction dans une section :
 ```{python}
